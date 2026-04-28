@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Profesional | Maitriyana Mettalia</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Maitriyana<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#beranda" data-i18n="nav_home">Beranda</a></li>
+                <li><a href="#tentang" data-i18n="nav_about">Tentang</a></li>
+                <li><a href="#portofolio" data-i18n="nav_portfolio">Portofolio</a></li>
+                <li><a href="#kontak" data-i18n="nav_contact">Kontak</a></li>
+                <li class="lang-selector">
+                    <select id="language-switcher">
+                        <option value="id">🇮🇩 ID</option>
+                        <option value="en">🇬🇧 EN</option>
+                        <option value="zh">🇨🇳 ZH</option>
+                    </select>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <section id="beranda" class="hero">
+        <div class="hero-container">
+            <div class="hero-image">
+                <img src="foto.png" alt="Foto Profil Maitriyana Mettalia">
+            </div>
+            <div class="hero-content">
+                <h1 data-i18n="hero_hello">Halo, Saya <br><span class="highlight">Maitriyana Mettalia</span></h1>
+                <h3 data-i18n="hero_role">Web Developer | UI/UX Designer | Educator</h3>
+                <p data-i18n="hero_desc">Mengubah Ide Menjadi Solusi Digital yang Interaktif.</p>
+                <div class="hero-buttons">
+                    <a href="#portofolio" class="btn btn-primary" data-i18n="hero_btn">Lihat Karya Saya</a>
+                    <a href="#kontak" class="btn btn-outline"><i class="fas fa-paper-plane"></i> Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tentang" class="about">
+        <h2 class="section-title" data-i18n="about_title">Tentang Saya</h2>
+        <div class="about-container">
+            <div class="about-text">
+                <p data-i18n="about_p1">Saya adalah seorang Web Developer dengan minat kuat pada desain UI/UX dan bersemangat menciptakan pengalaman digital yang bersih dan ramah pengguna. Saya senang mengubah ide menjadi solusi web yang fungsional dan menarik secara visual.</p>
+                <p data-i18n="about_p2">Selain pekerjaan saya di bidang teknologi, saya juga seorang Guru Mandarin yang bersemangat membuat pembelajaran menjadi menarik dan efektif. Saya percaya bahwa teknologi dan pendidikan memainkan peran penting dalam membentuk pengalaman yang lebih baik bagi banyak orang.</p>
+                
+                <div class="skills-container">
+                    <span class="skill-tag"><i class="fab fa-html5"></i> HTML & CSS</span>
+                    <span class="skill-tag"><i class="fas fa-pen-nib"></i> UI/UX Design</span>
+                    <span class="skill-tag"><i class="fas fa-database"></i> PHP & MySQL</span>
+                    <span class="skill-tag"><i class="fas fa-chalkboard-teacher"></i> Educator</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="portofolio" class="portfolio">
+        <h2 class="section-title" data-i18n="port_title">Karya Terbaru & Pengalaman</h2>
+        <div class="portfolio-grid">
+            
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-calendar-alt project-icon"></i>
+                        <h3>DSS-Based Scheduling Application</h3>
+                    </div>
+                    <p data-i18n="proj1_desc">Berpartisipasi dalam pengembangan Aplikasi Penentuan Jadwal berbasis Sistem Pendukung Keputusan sebagai bagian dari Program Studi Independen (MBKM Mandiri).</p>
+                    <div class="project-role">
+                        <strong data-i18n="role_label">Peran:</strong> <span data-i18n="proj1_role">Manajemen data, desain sistem, dan implementasi keputusan.</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://www.linkedin.com/in/maitriyana-mettalia/overlay/1776688630826/single-media-viewer/?profileId=ACoAAEQzmz0BlQxEG2X2-KrSVITSXhInn2BBWDU" target="_blank" class="btn-link"><i class="fas fa-certificate"></i> <span data-i18n="btn_cert">Lihat Sertifikat</span></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-laptop-code project-icon"></i>
+                        <h3>Website Development</h3>
+                    </div>
+                    <p data-i18n="proj2_desc">Berpartisipasi dalam Proyek Pengembangan Website sebagai bagian dari Program Studi Independen (MBKM Mandiri) bersama Universitas Universal.</p>
+                    <div class="project-role">
+                        <strong data-i18n="role_label">Peran:</strong> <span data-i18n="proj2_role">Membantu desain sistem, implementasi fitur, dan memastikan kinerja website.</span>
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://www.linkedin.com/in/maitriyana-mettalia/overlay/1776688769672/single-media-viewer/?profileId=ACoAAEQzmz0BlQxEG2X2-KrSVITSXhInn2BBWDU" target="_blank" class="btn-link"><i class="fas fa-certificate"></i> <span data-i18n="btn_cert">Lihat Sertifikat</span></a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-content">
+                    <div class="project-header">
+                        <i class="fas fa-utensils project-icon"></i>
+                        <h3>VeggieGuide: DSS for Restaurants</h3>
+                    </div>
+                    <p data-i18n="proj3_desc">Mengembangkan Sistem Pendukung Keputusan (SPK) web full-stack untuk membantu komunitas vegetarian menemukan tempat makan terbaik menggunakan algoritma SAW.</p>
+                    <div class="project-role">
+                        <strong>Tech Stack:</strong> PHP, MySQL, Bootstrap.
+                    </div>
+                </div>
+                <div class="project-footer">
+                    <a href="https://github.com/maitriyanamettallia/VeggieGuide/tree/main/WEB%20TA" target="_blank" class="btn-link"><i class="fab fa-github"></i> <span data-i18n="btn_repo">Lihat Repository</span></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="kontak" class="contact">
+        <div class="contact-box">
+            <h2 data-i18n="contact_title">Siap Memulai Proyek?</h2>
+            <p data-i18n="contact_desc">Tertarik untuk bekerja sama atau berdiskusi? Jangan ragu untuk mengirimkan pesan kepada saya.</p>
+            <div class="social-links">
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=maitriyanamettalia@gmail.com" target="_blank" class="social-btn email-btn"><i class="fas fa-envelope"></i> Kirim Email</a>
+                <a href="https://www.linkedin.com/in/maitriyana-mettalia/" target="_blank" class="social-btn linkedin-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <a href="https://github.com/maitriyanamettallia" target="_blank" class="social-btn github-btn"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Maitriyana Mettalia. <span data-i18n="footer_text">Dibuat dengan dedikasi.</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
