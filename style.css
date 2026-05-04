@@ -1,8 +1,8 @@
-/* --- PENGATURAN DASAR PREMIUM --- */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root {
-    --primary-color: #4f46e5; /* Biru Indigo Modern */
+    --primary-color: #4f46e5;
     --primary-hover: #4338ca;
     --text-dark: #0f172a;
     --text-light: #64748b;
@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif; /* Font baru yang profesional */
+    font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
 }
 
@@ -25,10 +25,9 @@ body {
     line-height: 1.7;
 }
 
-/* --- NAVIGASI GLASSMORPHISM --- */
 header {
     background: rgba(255, 255, 255, 0.85);
-    backdrop-filter: blur(12px); /* Efek Kaca Blur */
+    backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
     position: fixed;
@@ -80,7 +79,7 @@ header {
     color: var(--primary-color);
 }
 
-/* Pemilih Bahasa */
+
 .lang-selector select {
     padding: 6px 12px;
     border: 1px solid var(--border-color);
@@ -105,7 +104,7 @@ header {
     color: var(--text-dark);
 }
 
-/* --- HERO SECTION --- */
+
 .hero {
     min-height: 100vh;
     display: flex;
@@ -161,7 +160,7 @@ header {
     max-width: 500px;
 }
 
-/* Tombol Premium */
+
 .hero-buttons {
     display: flex;
     gap: 15px;
@@ -170,7 +169,7 @@ header {
 .btn {
     display: inline-block;
     padding: 14px 32px;
-    border-radius: 50px; /* Bentuk pil modern */
+    border-radius: 50px;
     font-weight: 600;
     text-decoration: none;
     transition: all 0.3s ease;
@@ -200,7 +199,7 @@ header {
     transform: translateY(-3px);
 }
 
-/* Animasi Floating Gambar */
+
 @keyframes float {
     0% { transform: translateY(0px); }
     50% { transform: translateY(-15px); }
@@ -220,10 +219,10 @@ header {
     object-fit: cover;
     border: 10px solid white;
     box-shadow: 0 20px 40px rgba(0,0,0,0.08);
-    animation: float 5s ease-in-out infinite; /* Memanggil efek animasi */
+    animation: float 5s ease-in-out infinite;
 }
 
-/* --- BAGIAN UMUM --- */
+
 section {
     padding: 7rem 5%;
     max-width: 1200px;
@@ -238,7 +237,7 @@ section {
     color: var(--text-dark);
 }
 
-/* --- TENTANG SAYA --- */
+
 .about-text {
     text-align: center;
     max-width: 800px;
@@ -278,7 +277,126 @@ section {
     transform: translateY(-2px);
 }
 
-/* --- PORTOFOLIO --- */
+/* --- RESUME SECTION (GARIS WAKTU) --- */
+.resume-section {
+    background-color: var(--white);
+}
+
+.resume-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.resume-column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.resume-heading {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.resume-heading i {
+    color: var(--primary-color);
+    font-size: 1.8rem;
+}
+
+
+.timeline {
+    border-left: 3px solid var(--border-color);
+    padding-left: 20px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -28px;
+    top: 5px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.2);
+}
+
+.timeline-item h4 {
+    font-size: 1.15rem;
+    color: var(--text-dark);
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.timeline-item h5 {
+    font-size: 0.95rem;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.timeline-item ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.timeline-item ul li {
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+
+.compact-list {
+    list-style: none;
+    background: var(--bg-main);
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+.compact-list li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    color: var(--text-dark);
+    border-bottom: 1px dashed var(--border-color);
+    padding-bottom: 10px;
+}
+
+.compact-list li:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.cert-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.cert-list li i {
+    color: #f59e0b;
+    margin-top: 4px;
+}
+
+
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -294,7 +412,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1); /* Transisi sangat halus */
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .project-card:hover {
@@ -408,7 +526,7 @@ section {
     box-shadow: 0 10px 20px rgba(0,0,0,0.1);
 }
 
-/* --- FOOTER --- */
+
 footer {
     text-align: center;
     padding: 2.5rem;
@@ -418,7 +536,7 @@ footer {
     font-size: 0.95rem;
 }
 
-/* --- RESPONSIVITAS MOBILE --- */
+
 @media (max-width: 992px) {
     .hero-content h1 { font-size: 3rem; }
     .hero-image { flex: 0 0 280px; }
